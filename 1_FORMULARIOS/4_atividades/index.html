@@ -4,33 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade Input</title>
+    <title>Input radio</title>
 </head>
 <body>
     <form action="">
-    <div> 
-        <label for="nome">Nome:</label>
+        <div>
+            <label for="nome">Nome:</label>
             <input type="text" id="nome" placeholder="Digite aqui seu nome" required>
-    
-    <div>
-        <p>Escolha sua cor preferida:</p>
+        </div>
+        <div>
+            <input type="date" placeholder="Coloque o dia de hoje:">
 
-    </div>
-          <input type="radio" id="preto" name="cor">
-          <label for="preto">Preto</label>
         </div>
         <div>
-            <input type="radio" id="branco" name="cor"> 
-            <label for="branco">Branco</label>
+            <p>Escolha uma matéria que você goste:</p>
+
+            <div>
+                <input type="radio" id="matematica" name="materia">
+                <label for="matematica">Matemática</label>
+            </div>
+            <div>
+                <input type="radio" id="historia" name="materia">
+                <label for="historia">História</label>
+            </div>
+            <div>
+                <input type="radio" id="artes" name="materia">
+                <label for="artes">Artes</label>
+            </div>
+            <div>
+                <input type="radio" id="geografia" name="materia">
+                <label for="geografia">Geografia</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="turma">Escolha sua turma:</label>
+            <select name="turma" id="turma">
+                <option disabled   selected>Selecione...</option>
+                <option value="01ta">TI01TA</option>
+                <option value="01tb">TI01TB</option>
+                <option value="01tc">TI01TC</option>
+            </select>
         </div>
         <div>
-            <input type="radio" id="rosa" name="cor">
-            <label for="rosa">Rosa</label>
+            <input type="date">
+
         </div>
-        <div>
-            <input type="radio" id="roxo" name="cor">
-            <label for="roxo">Roxo</label>
-        </div>
+
+
         <button>Enviar</button>
     </form>
 </body>
